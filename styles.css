@@ -1,0 +1,217 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and font style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the main content */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Header style */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Sentiment emoji column style */
+table td.emoji {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+\/* Sentiment Analytics Section */
+.analytics {
+    background-color: #ecf0f1;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.analytics h2 {
+    font-size: 2rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Container for the sentiment cards */
+.analytics .card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Individual card style */
+.analytics .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.analytics .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.analytics .card h3 {
+    font-size: 1.6rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.analytics .card p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.analytics .card .emoji {
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+/* Progress bar for sentiment */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 8px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Positive sentiment progress bar */
+.positive {
+    background-color: #2ecc71; /* Green */
+    width: 100%;
+}
+
+/* Neutral sentiment progress bar */
+.neutral {
+    background-color: #f39c12; /* Yellow */
+    width: 50%;
+}
+
+/* Negative sentiment progress bar */
+.negative {
+    background-color: #e74c3c; /* Red */
+    width: 20%;
+}
+
+/* Additional styling for overall mood summary */
+.analytics .summary {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.analytics .summary h3 {
+    font-size: 1.8rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.analytics .summary p {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+    }
+
+    .analytics h2 {
+        font-size: 1.6rem;
+    }
+
+    .analytics .card h3 {
+        font-size: 1.2rem;
+    }
+}
