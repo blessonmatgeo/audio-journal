@@ -1,4 +1,4 @@
-Audio Journal Dashboard with Sentiment Analysis
+  **Audio Journal Dashboard with Sentiment Analysis**
 
 
 Overview
